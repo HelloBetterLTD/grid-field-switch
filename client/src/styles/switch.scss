@@ -1,0 +1,51 @@
+.light-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+}
+
+.light-switch-holder {
+    line-height: 0;
+}
+
+.light-switch-slider {
+    background: #e3e3e3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: .4s;
+    border-radius: 16px;
+
+    &:before {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        top: 2px;
+        left: 2px;
+        background-color: #fff;
+        box-shadow: 0 3px 1px 0 rgba(0,0,0,.06), 0 3px 8px 0 rgba(0,0,0,.15);
+        transition: .2s;
+        border-radius: 50%;
+    }
+}
+
+.light-switch-checkbox {
+    position: absolute;
+    left: -99999px;
+}
+
+.light-switch-on {
+
+    .light-switch-slider {
+        background: #34c759;
+    }
+
+    .light-switch-slider:before {
+        left: 16px;
+    }
+}
