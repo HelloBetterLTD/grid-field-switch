@@ -19,7 +19,7 @@ class SwitchField extends FormField
 
     public function setOn($on = true)
     {
-        return $this->on = $on;
+        $this->on = $on;
         return $this;
     }
 
