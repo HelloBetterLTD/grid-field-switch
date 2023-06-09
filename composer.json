@@ -11,14 +11,14 @@
     }],
     "require": {
         "php": ">=8",
-        "silverstripe/framework": "^4.10"
+        "silverstripe/framework": "4.* | 5.*"
     },
     "extra": {
         "expose": [
             "client/dist",
             "client/lang"
         ],
-        "installer-name": "custom-emails"
+        "installer-name": "grid-field-switch"
     },
     "autoload": {
         "psr-4": {
