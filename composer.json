@@ -15,8 +15,7 @@
     },
     "extra": {
         "expose": [
-            "client/dist",
-            "client/lang"
+            "client/dist"
         ],
         "installer-name": "grid-field-switch"
     },
